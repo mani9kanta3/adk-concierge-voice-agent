@@ -1,0 +1,30 @@
+# pyproject.toml
+
+[project]
+name = "voice-agent"
+version = "0.1.0"
+description = "ADK Voice Assistant with Google Calendar"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    # Core Agent Framework
+    "google-adk", 
+    
+    # Gemini API Client
+    "google-genai",
+    
+    # Google Calendar Tooling
+    "google-api-python-client", 
+    "google-auth-oauthlib",
+    
+    # Fast API Backend for Phase 2
+    "fastapi",
+    "uvicorn",
+    "python-multipart",
+    "websockets",
+    "python-dotenv"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
